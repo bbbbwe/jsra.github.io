@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: url("img1.jpg");
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_right ul li {
+    list-style: none;
+    display: inline;
+    
+
+}
+.nav_right ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    text-transform: uppercase;
+    margin: 5px;
+
+}
+.dial{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 96vh;
+    /* margin: 202px; */
+    justify-content: center;
+    align-items: center;
+    padding: 205px;
+    margin: 20px;
+    text-align: center;}
+
+    .active{
+        background: rgb(63, 241, 63);
+        padding: 5px;
+        border-radius: 3px;
+    }
+    .active:hover{
+        background: rgb(28, 245, 39);
+        background: greenyellow;}
+
+.nav_right{
+    margin-right: 69px;
+}
+.nav_left{
+    margin-left: -2px;
+}
+.foot{
+
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 6vh;
+}
+header{
+    
+    position: absolute;
+    top: 11%;
+    /* left: 1%; */
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page{
+    
+    position: absolute;
+    top: 11%;
+    /* left: 1%; */
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.middle{
+    margin: 10px;
+    background: beige;
+    padding: 45px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;}
+
+.user{
+    margin: 10px;
+    position: relative;
+    left: 29%;
+    font-size: 26px;
+}
+
+#user_name{
+    padding: 10px;
+    border-radius: 10px
+}
+.pass{
+    margin: 10px;
+    position: relative; 
+    left: 26%;
+    font-size: 22px;
+}
+#user_pass{
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    background: #55ef55;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn{
+    position: absolute;
+    bottom: 54px;
+    left: 48%;
+}

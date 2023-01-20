@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+
+
+        <div class="main">
+            <div class="nav_left">
+            <img  src="img2.png" alt="#" style="    width: 240px;
+            height: 172px;">
+            </div>
+            <div class="nav_right">
+                <ul>
+                    <li><a href="">
+                        Home
+                    </a>
+                       
+                    </li>
+                    <li><a href="">
+                        About
+                    </a>
+
+                    </li>
+                    <li><a href="">
+                       Contact
+                    </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+    </div>
+    </div>
+    <header>
+        <div class="page">
+          <div class="head">
+          <div class="heading"><h1>LOGIN</h1></div>
+          </div>
+          <div class="middle">
+              <div  class="user">Name</div>
+              <input type="text" id = "user_name">
+              <div class="pass">Password</div>
+              <input type="password" id="user_pass">
+          </div>
+        </div>
+      </header>
+      <div class="btn">
+       <a href=""><button id="btn1" disabled="true" >submit</button></a>
+      </div> 
+</body>
+<script>
+let user = document.getElementsByClassName("user")
+let pass = document.getElementsByClassName('pass')
+const btn =  document.getElementById('btn1')
+console.log(btn)
+user = "admin"
+pass= '1234'
+console.log(user)
+
+
+    if(user.value =="admin" && pass.value == "1234"){
+        btn.style.disabled =  'false'
+    }
+    else{
+        document.write("Error 404 found details are incorrect")
+    }
+
+                            
+
+</script>
+</html>
