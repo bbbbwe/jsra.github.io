@@ -61,21 +61,23 @@
       </div> 
 </body>
 <script>
-let user = document.getElementsByClassName("user")
-let pass = document.getElementsByClassName('pass')
+let user = document.getElementById("user_name")
+let pass = document.getElementById('user_pass')
 const btn =  document.getElementById('btn1')
 console.log(btn)
 user = "admin"
 pass= '1234'
 console.log(user)
-
-
+  btn.addEventListener("click",()=>{
+  
     if(user.value =="admin" && pass.value == "1234"){
-        btn.style.disabled =  'false'
+        document.write(`hello Welcome ${user}`)
     }
     else{
         document.write("Error 404 found details are incorrect")
     }
+  })
+ 
 
                             
 
